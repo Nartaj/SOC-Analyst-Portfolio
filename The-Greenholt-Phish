@@ -26,7 +26,7 @@ Phishing Analysis Report: Case "The Greenholt Phish"
   Reply-To Address: info.mutawamarine@mail.com 
   (Внимание: не совпадает с адресом отправителя!).
 
-
+![Figure 1](Screen1.png)
 Figure 1: Email header analysis showing the sender details and mismatched Reply-To address.
 
   Originating IP: 192.119.71.157 (Owner: Hostwinds LLC).
