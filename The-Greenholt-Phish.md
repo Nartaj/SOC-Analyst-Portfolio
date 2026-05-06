@@ -31,7 +31,7 @@ Figure 1: Email header analysis showing the sender details and mismatched Reply-
 
   Originating IP: 192.119.71.157 (Owner: Hostwinds LLC).
 
-
+![Figure 2](Screen2.png)
 Figure 2: Originating IP identification and GeoIP/Provider lookup.
 
 3. Email Authentication Check
@@ -41,6 +41,7 @@ Figure 2: Originating IP identification and GeoIP/Provider lookup.
 
   DMARC Record: v=DMARC1; p=quarantine; fo=1
 
+![Figure 3](Screen3.png)
 Figure 3: Verification of SPF and DMARC records for the target domain.
 
   Analysis: Политика DMARC установлена на quarantine, 
@@ -55,13 +56,13 @@ Figure 3: Verification of SPF and DMARC records for the target domain.
   File Hash (SHA256):
   2e91c533615a9bb8929ac4bb76707b2444597ce063d84a4b33525e25074fff3f
 
-
+![Figure 4](Screen4.png)
 Figure 4: Integrity check of the suspicious attachment using SHA256 hashing in the terminal.
 
   File Size: 400.26 KB
   True File Type: RAR (Обнаружена маскировка под .CAB и .PDF)
 
-
+![Figure 5](Screen5.png)
 Figure 5: VirusTotal analysis revealing the true file type and malicious detections.
 
   Analysis: Использование двойного расширения и маскировки под PDF -
