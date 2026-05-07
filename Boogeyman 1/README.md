@@ -20,18 +20,20 @@ DFIR Investigation: Case "Boogeyman 1"
    
    Department: Finance.
 
-![Figure 1](Screen1.1.png)
-Figure 1: Initial phishing email analysis and relay identification.
+
 
 3. Indicators of Compromise (IoC)
-  ![Figure 1: Consolidated Indicators of Compromise (IoCs)](Screen1.1.png)
+
+  ![Figure 1](Screen1.1.png)
+  Figure 1: Initial phishing email analysis and relay identification.
+  
 4. Phase 3: Data Exfiltration & Network Analysis
 
   4.1. Delivery Analysis (Initial Access)
   Первоначальный доступ был получен через целевую Spear-Phishing рассылку,
   направленную на сотрудников финансового отдела.
 
-    ![Figure 2: Phishing email showing typosquatted domain and password-protected attachment](Screen1.2..png)
+  ![Figure 2: Phishing email showing typosquatted domain and password-protected attachment](Screen1.2..png)
     
     * Вектор атаки: Электронное письмо от имени бизнес-партнера (B Packaging Inc.) 
     на адрес julianne.westcott@hotmail.com
