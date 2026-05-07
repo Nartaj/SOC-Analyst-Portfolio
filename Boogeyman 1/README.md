@@ -25,18 +25,12 @@ Figure 1: Initial phishing email analysis and relay identification.
 
 3. Indicators of Compromise (IoC)
 
-
-#,Type,Value,Category,Description
-1,Email,agriffin@bpakcaging.xyz,Phishing Source,Исходный адрес доставки (Look-alike domain).
-2,Domain,files.bpakcaging.xyz,Payload Delivery,Хостинг первой стадии вредоносного ПО.
-3,Domain,cdn.bpakcaging.xyz,C2 Server,Командный центр для управления сессией.
-4,IP,167.71.211.113,Exfiltration Point,Адрес назначения при DNS-туннелировании.
-5,Artifact,protected_data.kdbx,Compromised Data,"База паролей KeePass, похищенная с хоста."
-6,Service,ElasticEmail,Provider,"Почтовый релей, использованный для обхода фильтров."
-
-
-
-
+#     |     Type      |    Value               |       Category
+1          Email        agriffin@bpakcaging.xyz
+2          Domain       files.bpakcaging.xyz
+3          Domain       cdn.bpakcaging.xyz
+4           IP          167.71.211.113
+5          Artifact     protected_data.kdbx
 
 4. Phase 3: Data Exfiltration & Network Analysis
 
