@@ -31,6 +31,8 @@ Figure 1: Initial phishing email analysis and relay identification.
   Первоначальный доступ был получен через целевую Spear-Phishing рассылку,
   направленную на сотрудников финансового отдела.
 
+    ![Figure 2: Phishing email showing typosquatted domain and password-protected attachment](Screen1.2..png)
+    
     * Вектор атаки: Электронное письмо от имени бизнес-партнера (B Packaging Inc.) 
     на адрес julianne.westcott@hotmail.com
 
