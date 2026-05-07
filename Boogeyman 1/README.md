@@ -20,7 +20,7 @@ DFIR Investigation: Case "Boogeyman 1"
    
    Department: Finance.
 
-
+![Figure 1](Screen1.1png)
 Figure 1: Initial phishing email analysis and relay identification.
 
 3. Indicators of Compromise (IoC)
