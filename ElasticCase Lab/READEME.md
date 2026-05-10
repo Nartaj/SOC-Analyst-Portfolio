@@ -1,46 +1,34 @@
+# ElasticCase: Cross-Platform Incident Investigation
 
-# ElasticCase Digital Forensics & Incident Response (DFIR) Lab
+## Project Overview
+This repository contains a deep-dive forensic analysis of the **ElasticCase** lab from CyberDefenders. The investigation covers a complex, multi-stage attack targeting both Windows and Linux environments, reconstructed using the **Elastic Stack (ELK)**.
 
-<a href="./SOLUTION.md">
-  <button>Detailed step-by-step solutions can be found SOLUTION.md (Write-up)</button>
-</a>
+## Key Objectives
+*   Identify the initial access vector and malware execution flow.
+*   Analyze defense evasion techniques and registry tampering.
+*   Investigate Linux-based exploits including **Log4Shell (RCE)** and **PwnKit (LPE)**.
+*   Develop robust **KQL queries** for threat hunting and incident reconstruction.
 
-## Overview
-This repository contains my technical walkthrough and analysis of the **ElasticCase** lab from CyberDefenders. The objective was to investigate a security breach on a Windows workstation using the Elastic Stack (ELK).
-
-## Scenario
-An alert was triggered indicating suspicious activity on a corporate endpoint. The goal was to analyze ingested logs (Winlogbeat, Sysmon, Powershell) to reconstruct the attacker's actions, identify the malware used, and determine the extent of the compromise.
-
-## Tech Stack
+## Technical Stack
 *   **SIEM:** Elastic Search & Kibana
-*   **Data Source:** Winlogbeat & Sysmon
-*   **Query Language:** KQL (Kibana Query Language)
+*   **Log Sources:** Winlogbeat, Sysmon, Auditd, Application Logs (Solr)
+*   **Methodology:** MITRE ATT&CK Framework Mapping
+*   **Language:** KQL (Kibana Query Language)
 
-## Investigation Methodology
-My approach focused on reconstructing the attack timeline by pivoting through indexed data. I utilized **KQL** to construct complex filters for deep-dive analysis, focusing on:
+## Analysis Summary
+The attack lifecycle followed a classic Kill Chain:
+1.  **Initial Access:** Phishing via double-extension executable.
+2.  **Execution:** Proxy execution through `rundll32.exe`.
+3.  **Persistence/Evasion:** Tampering with FIPS algorithm policies in the Windows Registry.
+4.  **Lateral Movement:** Exploitation of CVE-2021-44228 (Log4Shell) on a Linux host.
+5.  **Privilege Escalation:** Leveraging CVE-2021-4034 (PwnKit) to gain root access.
 
-*   **Log Correlation:** Manually correlating Sysmon events (Event ID 1 for processes, ID 3 for network) to map the attacker's footprint.
-*   **Query Optimization:** Leveraged AI-assisted KQL generation to accelerate the construction of specific filters, allowing for more time-efficient threat hunting and artifact discovery.
-*   **Behavioral Analysis:** Identifying anomalies in command-line arguments and parent-child process trees to distinguish between legitimate system activity and malicious execution.
+---
 
-### 1. Initial Access & Execution
-*   Analyzed process creation events to identify the entry point.
-*   Focused on suspicious parent-child process relationships (e.g., `explorer.exe` spawning `powershell.exe`).
-*   **Key Skill:** Filtering `event.code: 1` (Process Creation) to track execution flow.
+## Detailed Solution
+Detailed step-by-step analysis, including KQL queries and Indicators of Compromise (IOCs), can be found in the full write-up:
 
-### 2. Persistence & Lateral Movement
-*   Investigated registry modifications and scheduled tasks designed to maintain access.
-*   Used KQL to isolate encoded PowerShell commands often used for obfuscation.
-*   *Example Query:* `process.args: *EncodedCommand*`
+[![View Solution](https://img.shields.io/badge/Write--up-View%20Technical%20Report-blue?style=for-the-badge&logo=elastic-stack)](./SOLUTION.md)
 
-### 3. Indicator of Compromise (IoC) Identification
-*   Extracted malicious IP addresses, domain names, and file hashes from the logs.
-*   Correlated network connections (`event.code: 3`) with specific process IDs (PIDs) to identify C2 (Command & Control) communication.
-
-## Key Findings
-*   **Malicious Scripting:** Identified heavily obfuscated PowerShell scripts used for initial staging.
-*   **Data Exfiltration:** Tracked unusual outbound traffic spikes indicating potential data theft.
-*   **Artifact Recovery:** Successfully identified the specific malware family by analyzing file paths and naming conventions used by the threat actor.
-
-## Conclusion
-The lab demonstrated the power of the Elastic Stack in modern SOC operations. By leveraging **KQL**, I was able to pivot through massive datasets to find "the needle in the haystack" and build a timeline of the attack.
+---
+*Note: This investigation was performed in a controlled lab environment for educational purposes.*
