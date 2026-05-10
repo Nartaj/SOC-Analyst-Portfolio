@@ -1,7 +1,7 @@
 
 # ElasticCase Digital Forensics & Incident Response (DFIR) Lab
 
-«Detailed step-by-step solutions can be found in ./SOLUTION.md».
+Detailed step-by-step solutions can be found in ./SOLUTION.md
 
 ## Overview
 This repository contains my technical walkthrough and analysis of the **ElasticCase** lab from CyberDefenders. The objective was to investigate a security breach on a Windows workstation using the Elastic Stack (ELK).
