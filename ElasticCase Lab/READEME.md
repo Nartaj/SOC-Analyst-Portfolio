@@ -1,10 +1,8 @@
 
 # ElasticCase Digital Forensics & Incident Response (DFIR) Lab
 
-Detailed step-by-step solutions can be found in ./SOLUTION.md
-
 <a href="./SOLUTION.md">
-  <button>Посмотреть решение (Write-up)</button>
+  <button>Detailed step-by-step solutions can be found SOLUTION.md (Write-up)</button>
 </a>
 
 ## Overview
