@@ -3,6 +3,10 @@
 
 Detailed step-by-step solutions can be found in ./SOLUTION.md
 
+<a href="./SOLUTION.md">
+  <button>Посмотреть решение (Write-up)</button>
+</a>
+
 ## Overview
 This repository contains my technical walkthrough and analysis of the **ElasticCase** lab from CyberDefenders. The objective was to investigate a security breach on a Windows workstation using the Elastic Stack (ELK).
 
