@@ -6,7 +6,9 @@
 # Technical Write-up: ElasticCase Lab Analysis
 
 ## 🛡️ Executive Summary
-During the investigation in **Elastic SIEM**, I identified a multi-stage attack involving phishing-based initial access, malicious DLL execution, defense evasion, and cross-platform exploitation (**Log4Shell** & **PwnKit**). The attacker successfully established remote access, executed reverse shells, and escalated privileges to root.
+During the investigation in **Elastic SIEM**, I identified a multi-stage attack involving phishing-based initial access,
+malicious DLL execution, defense evasion, and cross-platform exploitation (**Log4Shell** & **PwnKit**).
+The attacker successfully established remote access, executed reverse shells, and escalated privileges to root.
 
 ---
 
