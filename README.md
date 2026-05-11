@@ -1,33 +1,37 @@
+# SOC Analyst & Digital Forensics Portfolio
 
-# SOC Analyst & Threat Hunting Portfolio
+Digital Forensics and Incident Response (DFIR) enthusiast with hands-on experience in **Banking Security Operations** and **Cybersecurity Compliance**. Currently specializing in automated threat detection and cross-platform log analysis.
 
-This repository contains detailed write-ups and technical reports from my security analysis labs, university projects (AITU), and platforms like CyberDefenders and TryHackMe.
+## 🎯 Professional Focus
+I leverage the **ELK Stack**, **Splunk**, and **Microsoft Defender** to hunt for advanced persistent threats (APTs) and automate incident response workflows.
 
-## 🎯 Objective
-The goal of this portfolio is to demonstrate my ability to detect, analyze, and mitigate cyber threats using industry-standard tools and frameworks.
+## 🛠 Tech Stack & Expertise
+* **SIEM/SOAR:** Elastic Stack (KQL), Splunk (SPL), Microsoft Defender for Cloud.
+* **DFIR Tools:** Volatility, Wireshark, FTK Imager, Zeek, Sysmon.
+* **Automation & AI:** Python (Log Parsers), YOLOv8 (UAV-based monitoring), LangChain.
+* **Frameworks:** MITRE ATT&CK mapping, NIST SP 800-61, ISO 27001.
 
-## 🛠 Tech Stack & Tools
-*   **SIEM/Monitoring:** Splunk, ELK Stack, Microsoft Defender.
-*   **Network Analysis:** Wireshark, Zeek, TCPDump.
-*   **Endpoint & Forensics:** Volatility, Sysmon, FTK Imager.
-*   **Scanning & Recon:** Nmap, Metasploit, Burp Suite.
-*   **Frameworks:** MITRE ATT&CK, NIST Incident Response.
+## 📁 Featured Projects
 
-## 📁 Portfolio Highlights
+### 🔍 Incident Response (ELK Stack)
+* **[ElasticCase: Multi-Stage Attack Analysis](./ElasticCase_Lab)**: Investigated a cross-platform compromise involving **Log4Shell (RCE)** and **PwnKit (LPE)**. Developed custom KQL queries for lateral movement detection.
+* **[Sana: Cybersecurity Awareness Platform]**: Developing a gamified education platform as a graduation thesis focused on cyber hygiene.
 
-### 🔍 Incident Response & Forensics
-*   **[Название лабы 1]**: Memory analysis of a Windows system infected with Emotet. (Tools: Volatility).
-*   **[Название лабы 2]**: Investigating a SQL Injection attack via web server logs.
+### 🏹 Threat Hunting & Forensics
+* **Memory Forensics**: Analyzing Windows artifacts to detect beaconing and process injection using Volatility.
+* **Network Security**: Investigating exfiltration attempts via DNS tunneling and unauthorized RDP sessions.
 
-### 🏹 Threat Hunting
-*   **Hunting for Persistence**: Identifying unauthorized scheduled tasks and registry modifications using Sysmon.
-*   **Lateral Movement Detection**: Analyzing RDP logs and SMB traffic for anomalies.
-
-### 🛡️ Security Automation
-*   **Python Log Parser**: A script to automate the extraction of IoCs from large proxy logs.
+### 🤖 Security Innovation
+* **UAV-based Monitoring**: Implementing Computer Vision (YOLOv8) for automated agricultural monitoring and security via drones.
 
 ---
-## 🎓 Certifications & Education
-*   **3rd Year Cybersecurity Student** @ Astana IT University.
-*   **Microsoft Cybersecurity Analyst Professional Certificate.**
-*   Top 10% on TryHackMe / Active on CyberDefenders.
+
+## 🎓 Education & Certifications
+* **B.Sc. in Cybersecurity** | Astana IT University (3rd Year).
+* **Microsoft Cybersecurity Analyst Professional Certificate** (Completed 9/9 courses).
+* **Professional Internships**: Astana International Exchange (AIX) & Alatau City Bank.
+
+---
+## 🔗 Connect with me
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](ТВОЯ_ССЫЛКА)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-Profile-red?style=flat-square)](ТВОЯ_ССЫЛКА)
