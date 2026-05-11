@@ -33,5 +33,5 @@ I leverage the **ELK Stack**, **Splunk**, and **Microsoft Defender** to hunt for
 
 ---
 ## 🔗 Connect with me
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](ТВОЯ_ССЫЛКА)
-[![TryHackMe](https://img.shields.io/badge/TryHackMe-Profile-red?style=flat-square)](ТВОЯ_ССЫЛКА)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](www.linkedin.com/in/nartay-yskakov-7108a429a)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-Profile-red?style=flat-square)](https://tryhackme.com/p/ynartaj)
