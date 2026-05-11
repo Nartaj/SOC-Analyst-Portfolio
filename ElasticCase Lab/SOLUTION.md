@@ -5,14 +5,14 @@
 ```markdown
 # Technical Write-up: ElasticCase Lab Analysis
 
-## 🛡️ Executive Summary
+##  Executive Summary
 During the investigation in **Elastic SIEM**, I identified a multi-stage attack involving phishing-based initial access,
 malicious DLL execution, defense evasion, and cross-platform exploitation (**Log4Shell** & **PwnKit**).
 The attacker successfully established remote access, executed reverse shells, and escalated privileges to root.
 
 ---
 
-## 🔍 Investigation Phases
+##  Investigation Phases
 
 ### Phase 1: Initial Access (Windows)
 **MITRE ATT&CK:** [T1204.002](https://attack.mitre.org/techniques/T1204/002/) — User Execution: Malicious File
@@ -107,7 +107,7 @@ process.command_line : "*CVE-2021-4034.py*" or (process.name : "pkexec" and proc
 
 ---
 
-## 📊 Indicators of Compromise (IoCs)
+##  Indicators of Compromise (IoCs)
 
 | Type | Value | Description |
 | --- | --- | --- |
